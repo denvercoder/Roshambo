@@ -16,11 +16,73 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcj-nS-QFT">
+                                <rect key="frame" x="263" y="267" width="75" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="LKH-BV-Sqi"/>
+                                    <constraint firstAttribute="height" constant="65" id="nlf-Xy-Hb4"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="paper.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Cx-nm-cnc">
+                                <rect key="frame" x="180" y="267" width="75" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="5qJ-BK-v8C"/>
+                                    <constraint firstAttribute="width" constant="75" id="Pms-Hy-Bxl"/>
+                                    <constraint firstAttribute="height" constant="65" id="YSJ-7U-cf7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="gEd-xA-7Pl"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="rock.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDm-uX-Rkz">
+                                <rect key="frame" x="346" y="267" width="75" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="3Rf-jz-XTQ"/>
+                                    <constraint firstAttribute="width" constant="75" id="DZP-hZ-rTi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="W53-f6-4qZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="jdb-IY-tSc"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="scissors.png"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dcj-nS-QFT" firstAttribute="leading" secondItem="7Cx-nm-cnc" secondAttribute="trailing" constant="8" id="047-yR-ZR2"/>
+                            <constraint firstItem="dDm-uX-Rkz" firstAttribute="top" secondItem="7Cx-nm-cnc" secondAttribute="top" id="5a6-FK-FYu"/>
+                            <constraint firstItem="dcj-nS-QFT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lk2-2v-DON"/>
+                            <constraint firstItem="dcj-nS-QFT" firstAttribute="top" secondItem="7Cx-nm-cnc" secondAttribute="top" id="Zfx-ED-7y6"/>
+                            <constraint firstItem="dcj-nS-QFT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b28-sH-whl"/>
+                            <constraint firstItem="dDm-uX-Rkz" firstAttribute="leading" secondItem="dcj-nS-QFT" secondAttribute="trailing" constant="8" id="jLB-S1-ap2"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="255" y="117"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CVz-RN-Ha3">
+            <objects>
+                <viewController id="qbp-rs-Vrx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gaT-pF-l90"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xj2-Ge-LzY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lqj-sz-Swv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGc-la-tcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="117"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paper.png" width="75" height="65"/>
+        <image name="rock.png" width="75" height="65"/>
+        <image name="scissors.png" width="75" height="65"/>
+    </resources>
 </document>

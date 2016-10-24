@@ -12,6 +12,14 @@
 		D72E83841DBEB7DE00F2801A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72E83821DBEB7DE00F2801A /* Main.storyboard */; };
 		D72E83861DBEB7DE00F2801A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72E83851DBEB7DE00F2801A /* Assets.xcassets */; };
 		D72E83891DBEB7DE00F2801A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72E83871DBEB7DE00F2801A /* LaunchScreen.storyboard */; };
+		D72E83971DBEB89B00F2801A /* itsATie.png in Resources */ = {isa = PBXBuildFile; fileRef = D72E83901DBEB89B00F2801A /* itsATie.png */; };
+		D72E83981DBEB89B00F2801A /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = D72E83911DBEB89B00F2801A /* paper.png */; };
+		D72E83991DBEB89B00F2801A /* PaperCoversRock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D72E83921DBEB89B00F2801A /* PaperCoversRock.jpg */; };
+		D72E839A1DBEB89B00F2801A /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = D72E83931DBEB89B00F2801A /* rock.png */; };
+		D72E839B1DBEB89B00F2801A /* RockCrushesScissors.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D72E83941DBEB89B00F2801A /* RockCrushesScissors.jpeg */; };
+		D72E839C1DBEB89B00F2801A /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = D72E83951DBEB89B00F2801A /* scissors.png */; };
+		D72E839D1DBEB89B00F2801A /* ScissorsCutPaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D72E83961DBEB89B00F2801A /* ScissorsCutPaper.jpg */; };
+		D72E83A11DBEB9AD00F2801A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72E83A01DBEB9AD00F2801A /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		D72E83851DBEB7DE00F2801A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D72E83881DBEB7DE00F2801A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D72E838A1DBEB7DE00F2801A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D72E83901DBEB89B00F2801A /* itsATie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itsATie.png; sourceTree = "<group>"; };
+		D72E83911DBEB89B00F2801A /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		D72E83921DBEB89B00F2801A /* PaperCoversRock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PaperCoversRock.jpg; sourceTree = "<group>"; };
+		D72E83931DBEB89B00F2801A /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
+		D72E83941DBEB89B00F2801A /* RockCrushesScissors.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RockCrushesScissors.jpeg; sourceTree = "<group>"; };
+		D72E83951DBEB89B00F2801A /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.png; sourceTree = "<group>"; };
+		D72E83961DBEB89B00F2801A /* ScissorsCutPaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ScissorsCutPaper.jpg; sourceTree = "<group>"; };
+		D72E83A01DBEB9AD00F2801A /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +75,15 @@
 				D72E83821DBEB7DE00F2801A /* Main.storyboard */,
 				D72E83851DBEB7DE00F2801A /* Assets.xcassets */,
 				D72E83871DBEB7DE00F2801A /* LaunchScreen.storyboard */,
+				D72E83901DBEB89B00F2801A /* itsATie.png */,
+				D72E83911DBEB89B00F2801A /* paper.png */,
+				D72E83921DBEB89B00F2801A /* PaperCoversRock.jpg */,
+				D72E83931DBEB89B00F2801A /* rock.png */,
+				D72E83941DBEB89B00F2801A /* RockCrushesScissors.jpeg */,
+				D72E83951DBEB89B00F2801A /* scissors.png */,
+				D72E83961DBEB89B00F2801A /* ScissorsCutPaper.jpg */,
 				D72E838A1DBEB7DE00F2801A /* Info.plist */,
+				D72E83A01DBEB9AD00F2801A /* ResultViewController.swift */,
 			);
 			path = RoShamBo;
 			sourceTree = "<group>";
@@ -122,9 +146,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D72E839D1DBEB89B00F2801A /* ScissorsCutPaper.jpg in Resources */,
 				D72E83891DBEB7DE00F2801A /* LaunchScreen.storyboard in Resources */,
+				D72E839B1DBEB89B00F2801A /* RockCrushesScissors.jpeg in Resources */,
+				D72E83981DBEB89B00F2801A /* paper.png in Resources */,
+				D72E83971DBEB89B00F2801A /* itsATie.png in Resources */,
+				D72E839A1DBEB89B00F2801A /* rock.png in Resources */,
+				D72E83991DBEB89B00F2801A /* PaperCoversRock.jpg in Resources */,
 				D72E83861DBEB7DE00F2801A /* Assets.xcassets in Resources */,
 				D72E83841DBEB7DE00F2801A /* Main.storyboard in Resources */,
+				D72E839C1DBEB89B00F2801A /* scissors.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +168,7 @@
 			files = (
 				D72E83811DBEB7DE00F2801A /* PlayViewController.swift in Sources */,
 				D72E837F1DBEB7DE00F2801A /* AppDelegate.swift in Sources */,
+				D72E83A11DBEB9AD00F2801A /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +320,7 @@
 				D72E838F1DBEB7DE00F2801A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
