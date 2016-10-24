@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Play View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RoShamBo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayViewController" id="BYZ-38-t0r" customClass="PlayViewController" customModule="RoShamBo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,6 +25,10 @@
                                     <constraint firstAttribute="height" constant="65" id="nlf-Xy-Hb4"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="paper.png"/>
+                                <connections>
+                                    <action selector="paperPlayed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GLG-bD-tDD"/>
+                                    <segue destination="qbp-rs-Vrx" kind="show" identifier="paperPlayed" id="4x8-26-HVu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Cx-nm-cnc">
                                 <rect key="frame" x="180" y="267" width="75" height="65"/>
@@ -34,6 +39,9 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="gEd-xA-7Pl"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="rock.png"/>
+                                <connections>
+                                    <action selector="rockPlayed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZCS-mS-Mdi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDm-uX-Rkz">
                                 <rect key="frame" x="346" y="267" width="75" height="65"/>
@@ -44,6 +52,10 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="jdb-IY-tSc"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="scissors.png"/>
+                                <connections>
+                                    <action selector="scissorsPlayed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbi-7t-QfY"/>
+                                    <segue destination="qbp-rs-Vrx" kind="show" identifier="scissorsPlayed" id="1Cq-9h-kBr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -59,12 +71,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="255" y="117"/>
+            <point key="canvasLocation" x="654" y="21"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="CVz-RN-Ha3">
             <objects>
-                <viewController id="qbp-rs-Vrx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" id="qbp-rs-Vrx" customClass="ResultViewController" customModule="RoShamBo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gaT-pF-l90"/>
                         <viewControllerLayoutGuide type="bottom" id="Xj2-Ge-LzY"/>
@@ -72,12 +84,49 @@
                     <view key="view" contentMode="scaleToFill" id="lqj-sz-Swv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ME-uP-5Ae">
+                                <rect key="frame" x="20" y="289" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuP-D4-c9r">
+                                <rect key="frame" x="261" y="349" width="79" height="30"/>
+                                <state key="normal" title="Play Again?"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="qbp-rs-Vrx" eventType="touchUpInside" id="85i-08-64O"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hw9-7k-klT">
+                                <rect key="frame" x="220" y="116" width="160" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="JIz-t4-MaW"/>
+                                    <constraint firstAttribute="height" constant="120" id="amB-xY-IAs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5ME-uP-5Ae" firstAttribute="top" secondItem="Hw9-7k-klT" secondAttribute="bottom" constant="53" id="1qN-fh-8Yg"/>
+                            <constraint firstItem="nuP-D4-c9r" firstAttribute="top" secondItem="5ME-uP-5Ae" secondAttribute="bottom" constant="39" id="6eh-cQ-oQD"/>
+                            <constraint firstItem="5ME-uP-5Ae" firstAttribute="leading" secondItem="lqj-sz-Swv" secondAttribute="leadingMargin" id="Bq9-I6-Bqz"/>
+                            <constraint firstItem="Hw9-7k-klT" firstAttribute="centerX" secondItem="lqj-sz-Swv" secondAttribute="centerX" id="O5G-Nv-CNq"/>
+                            <constraint firstItem="Hw9-7k-klT" firstAttribute="top" secondItem="gaT-pF-l90" secondAttribute="bottom" constant="96" id="Zfs-Fa-aFR"/>
+                            <constraint firstItem="5ME-uP-5Ae" firstAttribute="trailing" secondItem="lqj-sz-Swv" secondAttribute="trailingMargin" id="Zh3-Qh-Mth"/>
+                            <constraint firstItem="5ME-uP-5Ae" firstAttribute="centerY" secondItem="lqj-sz-Swv" secondAttribute="centerY" id="hPb-tK-brP"/>
+                            <constraint firstItem="5ME-uP-5Ae" firstAttribute="centerX" secondItem="lqj-sz-Swv" secondAttribute="centerX" id="kqX-8e-p6L"/>
+                            <constraint firstItem="nuP-D4-c9r" firstAttribute="centerX" secondItem="lqj-sz-Swv" secondAttribute="centerX" id="pin-Bz-sLK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="Hw9-7k-klT" id="xJP-0i-AH8"/>
+                        <outlet property="label" destination="5ME-uP-5Ae" id="UIN-sz-Twd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lGc-la-tcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="117"/>
+            <point key="canvasLocation" x="1386" y="51"/>
         </scene>
     </scenes>
     <resources>
@@ -85,4 +134,7 @@
         <image name="rock.png" width="75" height="65"/>
         <image name="scissors.png" width="75" height="65"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4x8-26-HVu"/>
+    </inferredMetricsTieBreakers>
 </document>
