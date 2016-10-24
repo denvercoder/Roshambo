@@ -42,10 +42,10 @@ class PlayViewController: UIViewController {
         let computer = randomPlay()
         controller.computerPlayed = computer
         
-        if segue.identifier == "paperPlayed" {
-            controller.playerPlayed = "paper"
-        } else if segue.identifier == "scissorsPlayed" {
+        if segue.identifier == "scissorsPlayed" {
             controller.playerPlayed = "scissors"
+        } else if segue.identifier == "paperPlayed" {
+            controller.playerPlayed = "paper"
         }
     }
     

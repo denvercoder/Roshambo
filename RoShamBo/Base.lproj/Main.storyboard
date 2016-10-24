@@ -27,7 +27,7 @@
                                 <state key="normal" title="Button" image="paper.png"/>
                                 <connections>
                                     <action selector="paperPlayed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GLG-bD-tDD"/>
-                                    <segue destination="qbp-rs-Vrx" kind="show" identifier="paperPlayed" id="4x8-26-HVu"/>
+                                    <segue destination="qbp-rs-Vrx" kind="show" identifier="paperPlayed" id="BRv-Hm-BjO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Cx-nm-cnc">
@@ -53,8 +53,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="scissors.png"/>
                                 <connections>
-                                    <action selector="scissorsPlayed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbi-7t-QfY"/>
-                                    <segue destination="qbp-rs-Vrx" kind="show" identifier="scissorsPlayed" id="1Cq-9h-kBr"/>
+                                    <segue destination="qbp-rs-Vrx" kind="show" identifier="scissorsPlayed" id="dRm-Xp-85T"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -135,6 +134,6 @@
         <image name="scissors.png" width="75" height="65"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4x8-26-HVu"/>
+        <segue reference="dRm-Xp-85T"/>
     </inferredMetricsTieBreakers>
 </document>
